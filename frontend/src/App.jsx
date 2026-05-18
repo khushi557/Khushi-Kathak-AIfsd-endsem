@@ -6,7 +6,7 @@ import axios from "axios";
 import "./App.css";
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const API = axios.create({ baseURL: import.meta.env.VITE_API_URL || "https://khushi-kathak-aifsd-endsem.onrender.com/api" });
+const API = axios.create({ baseURL: "https://khushi-kathak-aifsd-endsem.onrender.com/api" });
 
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
